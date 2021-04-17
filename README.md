@@ -1,2 +1,3 @@
-# smart-contracts
-Ethereum smart contracts
+# Ethereum smart contracts
+
+In development
