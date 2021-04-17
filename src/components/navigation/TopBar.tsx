@@ -19,33 +19,38 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       flexGrow: 1,
     },
-  }),
+  })
 );
 
-const TopBar = () => {
-    const classes = useStyles();
+const TopBar = (): React.ReactElement => {
+  const classes = useStyles();
 
-    return (
-        <AppBar position="static">
-            <Toolbar>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                    <MenuIcon />
-                </IconButton>
-                <Typography variant="h6" className={classes.title}>
-                    News
-                </Typography>
-                <Button color="inherit">Login</Button>
-                <IconButton
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  color="inherit"
-                >
-                    <AccountCircle />
-                </IconButton>
-            </Toolbar>
-        </AppBar>
-    )
-}
+  return (
+    <AppBar position="static">
+      <Toolbar>
+        <IconButton
+          edge="start"
+          className={classes.menuButton}
+          color="inherit"
+          aria-label="menu"
+        >
+          <MenuIcon />
+        </IconButton>
+        <Typography variant="h6" className={classes.title}>
+          News
+        </Typography>
+        <Button color="inherit">Login</Button>
+        <IconButton
+          aria-label="account of current user"
+          aria-controls="menu-appbar"
+          aria-haspopup="true"
+          color="inherit"
+        >
+          <AccountCircle />
+        </IconButton>
+      </Toolbar>
+    </AppBar>
+  );
+};
 
 export default TopBar;

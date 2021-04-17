@@ -4,12 +4,12 @@ import TopBar from './navigation/TopBar';
 
 import './App.css';
 
-const App = () => {
+const App = (): React.ReactElement => {
   return (
     <div className="App">
-        <TopBar />
+      <TopBar />
     </div>
-  )
-}
+  );
+};
 
 export default App;
